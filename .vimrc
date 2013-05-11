@@ -111,3 +111,24 @@ set noswapfile
 " https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
 " " Now you can install any plugin into a .vim/bundle/plugin-name/ folder
 call pathogen#infect()
+
+
+" ============================================================================
+" " Python IDE Setup
+" "
+" ============================================================================
+
+
+" " Settings for vim-powerline
+" " cd ~/.vim/bundle
+" " git clone git://github.com/Lokaltog/vim-powerline.git
+set laststatus=2
+
+
+" Settings for ctrlp
+" " cd ~/.vim/bundle
+" " git clone https://github.com/kien/ctrlp.vim.git
+let g:ctrlp_max_height = 30
+set wildignore+=*.pyc
+set wildignore+=*_build/*
+set wildignore+=*/coverage/*
